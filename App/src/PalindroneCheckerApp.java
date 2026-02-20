@@ -1,9 +1,21 @@
 public class PalindroneCheckerApp{
-            public static void main(String[] args) {
-                System.out.println("welcome to Palindrone Checker App");
-                System.out.println("Application name: Palindrone Checker");
-                System.out.println("version         :chitti2.0(red chip)");
 
-                System.out.println("system Initialized sucessfully");
-            }
+    public static void main(String[] args) {
+
+        System.out.println("Welcome to Palindrome Checker App");
+
+        String word = "madam";   // Hardcoded value
+
+        String reversed = "";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversed += word.charAt(i);
         }
+
+        if (word.equals(reversed)) {
+            System.out.println(word + " is a Palindrome");
+        } else {
+            System.out.println(word + " is NOT a Palindrome");
+        }
+    }
+}
